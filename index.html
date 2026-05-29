@@ -269,11 +269,21 @@ input[type="text"]:focus,select:focus{border-color:var(--primary-color);backgrou
     <button class="btn-pdf btn-pdf-generate" id="btnExport" onclick="generateFullPDFDirectly()" disabled>直接導出頁面</button>
   </div>
   <div class="watermark-container" aria-hidden="true"><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div></div>
-  <div class="header-container">
+  <div class="header-container" style="display: flex; justify-content: space-between; align-items: flex-end; position: relative;">
+  <!-- 為了保持標題視覺居中，左側增加一個隱形的佔位符 -->
+  <div style="width: 120px;"></div>
+  
+  <div style="flex-grow: 1; text-align: center;">
     <div class="header-title-zh">台灣美光記憶體股份有限公司企業工會</div>
     <div class="header-title-en">Micron Labor Union</div>
     <div class="header-subtitle">入會申請書 / Membership Application</div>
   </div>
+
+  <!-- 序號欄位 -->
+  <div class="serial-number-box" style="width: 120px; text-align: right; font-size: 13px; font-weight: 600;">
+    序號 NO.：<input type="text" style="width: 80px; border-bottom: 1px solid #000; background: transparent; padding: 2px 5px; text-align: center;" placeholder="   ">
+  </div>
+</div>
    <table><tbody>
   <tr>
     <td class="label-cell" style="width:18%;">姓名<span class="sub-label">Chinese Name</span></td>
