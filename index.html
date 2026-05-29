@@ -271,12 +271,19 @@ input[type="text"]:focus,select:focus{border-color:var(--primary-color);backgrou
   <div class="watermark-container" aria-hidden="true"><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div></div>
   <div class="header-container" style="display: flex; justify-content: space-between; align-items: flex-end; position: relative;">
   <!-- 為了保持標題視覺居中，左側增加一個隱形的佔位符 -->
-  <div style="width: 120px;"></div>
+  <div class="header-container" style="display: flex; justify-content: space-between; align-items: flex-end; width: 100%; box-sizing: border-box;">
   
-  <div style="flex-grow: 0; flex-shrink: 0; text-align: center; white-space: nowrap;">
-    <div class="header-title-zh">台灣美光記憶體股份有限公司企業工會</div>
+  <div style="flex: 1;"></div>
+  
+  <div style="flex: 2; text-align: center; min-width: 0; padding: 0 10px;">
+    <div class="header-title-zh" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">台灣美光記憶體股份有限公司企業工會</div>
     <div class="header-title-en">Micron Labor Union</div>
     <div class="header-subtitle">入會申請書 / Membership Application</div>
+  </div>
+
+  <div class="serial-number-box" style="flex: 1; text-align: right; font-size: 15px; font-weight: 600;">
+    序號 NO.：<input type="text" style="width: 80px; border-bottom: 1px solid #000; background: transparent; padding: 2px 5px; text-align: center;">
+  </div>
 </div>
 
   <!-- 序號欄位 -->
