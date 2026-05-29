@@ -243,7 +243,7 @@ input[type="text"]:focus,select:focus{border-color:var(--primary-color);backgrou
 .sig-modal-btns{margin-top:15px;display:flex;justify-content:flex-end;gap:10px;}
 .sig-btn{padding:9px 16px;border:none;border-radius:4px;cursor:pointer;font-size:13px;font-weight:600;}
 .sig-btn-clear{background:#eee;color:#333;}.sig-btn-cancel{background:#f5f5f5;color:#666;}.sig-btn-save{background:var(--primary-color);color:#fff;}
-@media screen and (max-width:767px){.header-title-zh {font-size: 28px !important; /* 手機版縮小字體 */letter-spacing: 0;}}
+@media screen and (max-width:767px){
  body{padding:8px;}.form-container{padding:15px 12px;width:100%;}.watermark-item{flex:0 0 140px;font-size:11px;margin:15px 5px;}
  .pdf-btn-container{position:static;width:100%;flex-direction:row;margin-bottom:15px;gap:8px;}.btn-pdf{flex:1;min-width:0;padding:10px 6px;font-size:12px;}
  .header-title-zh{font-size:24px;letter-spacing:1px;}.header-title-en,.header-subtitle{font-size:13px;}
@@ -271,19 +271,12 @@ input[type="text"]:focus,select:focus{border-color:var(--primary-color);backgrou
   <div class="watermark-container" aria-hidden="true"><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div><div class="watermark-item">限美光工會入會申請使用 / Internal Use Only</div></div>
   <div class="header-container" style="display: flex; justify-content: space-between; align-items: flex-end; position: relative;">
   <!-- 為了保持標題視覺居中，左側增加一個隱形的佔位符 -->
-  <div class="header-container" style="display: flex; justify-content: space-between; align-items: flex-end; width: 100%; box-sizing: border-box;">
+  <div style="width: 120px;"></div>
   
-  <div style="flex: 1;"></div>
-  
-  <div style="flex: 2; text-align: center; min-width: 0; padding: 0 10px;">
-    <div class="header-title-zh" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">台灣美光記憶體股份有限公司企業工會</div>
+  <div style="flex-grow: 0; flex-shrink: 0; text-align: center; white-space: nowrap;">
+    <div class="header-title-zh">台灣美光記憶體股份有限公司企業工會</div>
     <div class="header-title-en">Micron Labor Union</div>
     <div class="header-subtitle">入會申請書 / Membership Application</div>
-  </div>
-
-  <div class="serial-number-box" style="flex: 1; text-align: right; font-size: 15px; font-weight: 600;">
-    序號 NO.：<input type="text" style="width: 80px; border-bottom: 1px solid #000; background: transparent; padding: 2px 5px; text-align: center;">
-  </div>
 </div>
 
   <!-- 序號欄位 -->
